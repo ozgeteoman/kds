@@ -1,0 +1,351 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    position: fixed;;
+    width: 100%;
+    margin-left:0px;  /*dsad*/
+    padding: 10px 10px;
+    background: #ff7e0d;
+    border: none;
+    border-radius: 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 200px;
+    position: fixed;
+    margin-top: 50px;
+    left: 0;
+    height: 100vh;
+    padding-bottom: 0px;
+    overflow-y: scroll; 
+    z-index: 999;
+    background: #ff7e0d;
+    color: #fff;
+    transition: all 0.3s;
+   
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 12px 10px;
+    background:#7386D5;  
+}
+.navs-shadow{
+    -webkit-box-shadow: 0px 14px 26px -19px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 14px 26px -19px rgba(0,0,0,0.75);
+box-shadow: 0px 14px 26px -19px rgba(0,0,0,0.75);
+
+}
+
+#sidebar ul.components {
+    padding: 20px ;
+    
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1em;
+    display: block;
+    font-size: 16px;
+    
+}
+
+#sidebar ul li a:hover {
+    color: #96897d;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #96897d;
+    
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background-color: white;
+    color: #868686;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 1em !important;
+    display: block;
+}
+
+a.cıkıs {
+    background:#633b18;
+    font-weight: bold;
+    color: white;
+}
+
+a.article,
+a.article:hover {
+    background: #28190c !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#main {
+    width: calc(100%);
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+#content {
+    width: calc(100% - 250px);
+    padding-top: 40px;
+    padding-right: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    margin-top: 30px;
+    right: 0;
+
+}
+
+#content.active {
+    width: 100%;
+}
+
+.breadcrumb{
+    background-color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+
+/*admin anasayfa*/
+
+}
+.admin-card{
+    background-color:#fff;
+    margin-right: 20px;
+}
+.d-flex{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+.ust-baslik{
+    font-family: Times new roman ;
+    font-size: 21px;
+    font-weight: bold;
+}
+.orta-baslik{
+    font-size: 18px;
+    color: #6d6d6d;
+     font-style: italic;
+
+}
+.count-number{
+    color: grey;
+    font-size: 16px;
+    font-style: italic;
+}
+
+
+/*profil card*/
+.profil-duzen{
+    margin-top: 15%;
+    margin-left: 50px;
+}
+.foto-yükle{
+    margin-top: 25px;
+}
+.foto-sec{
+    margin-top: -44px;
+    margin-left: 50px;
+}
+.foto-konum{
+    max-width: 200px;
+    margin-left: 65%;
+    margin-bottom: 15%;
+    
+}
+.foto-acıklama{
+    padding-left: 20px;
+    margin-top: 15px;
+    color: #5d5d5d;
+    font-weight: bold;
+}
+.kisisel-form{
+    font-weight: bold;
+    padding-left: 1%;
+    color:#078121;
+}
+.form-kisisel{
+    padding-left: 1%;
+}
+.kisisel-icon{
+    color: #99a39b;
+}
+
+/*İLETİSİM SAYFASI*/
+.tablo-adı{
+    color: #078121;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+    width: 200px;
+}
+.iletisim-baslik{
+    margin-top: 3%;
+    font-size: 25px;
+    color: #ff7400;
+    font-weight: bold;
+
+}
+/*siparişler sayfası*/
+.siparis-baslik{
+    padding-top: 15px;
+    font-size: 25px;
+    color: #5d5d5d;
+    font-weight: bold;
+    margin-top: 25px;
+}
+/*urun gieris sayfası*/
+.nav-item.nav-link{
+    width: 220px;
+}
+.urun-form{
+    padding-left: 8px;
+    padding-top: 5px;
+    font-weight: bold;
+    color: #5D5D5D;
+}
+.urun-kisisel{
+    height: 50px;
+}
+.urun-konum{
+    margin-top: 15px;
+}
+.kg{
+   margin-bottom: 20px;
+}
+.urun-tab{
+    font-weight: bold;
+    height: 55px;
+    padding-top: 15px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: #358540;
+}
+.nav-tabs .nav-link{
+    border:1px solid #00000029;
+}
+.col-12{
+    height: 70px;
+}
+.urun_foto{
+    margin-top: 75px;
+}
+.urun_fotosu{
+    margin-top: 120px;
+}
+.tablo-acıklama{
+    color: #5D5D5D;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 50px;
+}
+.ürün-giris-buton{
+    width: 100%;
+    margin-top: 1%;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 1%;
+}
+.stok-kontrol{
+    padding-top: 20px;
+}
+.stok-kontrol {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: #8E8D8D;
+    padding-left: 30px;
+    border:0.50px solid #00000010;
+}
